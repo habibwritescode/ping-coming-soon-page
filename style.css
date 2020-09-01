@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.logo{
+    display: flex;
+    margin: 130px auto 60px;
+}
+
+.heading{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.heading span{
+color: hsl(209, 33%, 12%);
+font-weight: 700;
+}
+
+.sub-head{
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+input, button{
+    border-radius: 25px;
+    border: 1px solid;
+    font-size: 18px;
+    outline: none;
+    padding: 15px;
+    width: 100%;
+}
+
+input{
+    border-color: hsl(223, 87%, 63%);
+    padding-left: 40px;
+}
+
+button{
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    margin-bottom: 80px;
+    margin-top: 15px;
+}
+
+.error-msg{
+    color: hsl(354, 100%, 66%);
+    display: none;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.illustration{
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.icon-container > i:nth-child(2){
+    margin: 0 15px;
+}
+
+i{
+    border: 1px solid hsl(0, 6%, 71%);
+    border-radius: 50%;
+    color: hsl(223, 87%, 63%);
+    font-size: 20px;
+    padding: 15px;
+}
+
+i:hover{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+}
+
+.copyright{
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 500px) {
+    body{
+        width: 70vw;
+    }   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        width: 60vw;
+    }
+    
+    .heading{
+        font-size: 45px;
+    }
+    
+    .sub-head{
+        font-size: 25px;
+    }
+
+    form{
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    
+    input{
+        margin: 0;
+        width: 40vw;
+    }
+    
+    button{
+        margin: 0 0 0 15px;
+        width: 20vw;
+    }
+
+    .error-msg{
+        position: absolute;
+        top: 60px;
+        left: 40px;
+    }
+}

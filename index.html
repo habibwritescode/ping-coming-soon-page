@@ -4,19 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/899962e3da.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>Ping coming soon page</title>
 </head>
 
 <body>
+  <img src="./images/logo.svg" alt="ping-logo" class="logo">
 
-  We are launching soon!
+  <h1 class="heading">We are launching <span class="soon">soon!</span></h1>
 
-  Subscribe and get notified
+  <p class="sub-head">Subscribe and get notified</p>
 
-  Notify Me
+  <form action="">
+    <input type="email" name="email" id="email" placeholder="Your email address...">
+    <p class="error-msg">Whoops! It looks like you forgot to add your email</p>
+    <p class="error-msg">Please provide a valid email address</p>
+    <button>Notify Me</button>
+  </form>
 
-  &copy; Copyright Ping. All rights reserved.
+  <img src="./images/illustration-dashboard.png" alt="" class="illustration">
+  
+  <footer>
+    <div class="icon-container">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+    </div>
+    <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+  </footer>
   <script src="./scripts.js"></script>
 </body>
 
